@@ -1,0 +1,49 @@
+.Heading-service{
+    color:#59981A ;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.service-container-main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #ECF87F;
+}
+
+.service-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    margin: 20px;
+    justify-items:center ;
+}
+
+.service-grid-item{
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    background: #59981A;
+    border-radius: 50%; /* Makes the grid item circular */
+    width: 50px; /* Set width to ensure the circle is properly sized */
+    height: 50px; /* Set height to ensure the circle is properly sized */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    
+}
+
+@media (max-width:480px)
+{
+    .service-grid-container{
+        grid-template-columns: auto auto;
+        margin: 10px;
+    }
+
+    .service-grid-item{
+        padding: 20px;
+        margin: 10px;
+        width: 25px; /* Adjust size for smaller screens */
+        height: 25px;
+    }
+}

@@ -1,0 +1,22 @@
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+.courosell-backround{
+    z-index: 777;
+}
+
+.courosell-backround img{
+    width: 100%;
+    height: 700px;
+
+}
+
+@media (max-width:400px) {
+    .courosell-backround img{
+        height: 300px;
+    }
+}

@@ -1,0 +1,97 @@
+.navbar-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-container .container {
+    display: flex;
+    background: #8BCD50;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 3px 30px 10px black;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-container .container .navbar-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-container .container .navbar-item ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-container .container .navbar-item ul li p {
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    background: #DED93E;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.navbar-container .container .navbar-item ul li p:hover {
+    background: white;
+    color: #DED93E;
+}
+
+.navbar-container .container .logo {
+    margin: 5px;
+}
+
+.navbar-container .container .navbar-item ul li {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.navbar-container .container .logo img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 10px    black;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-container .container .navbar-item {
+        display: none;
+    }
+
+    .navbar-container .container .navbar-item.open {
+        display: flex;
+        justify-content: center;
+        
+        position: absolute;
+        top: 150px;
+        right: 80px;
+        background:  #8acd50df;
+        padding: 50px;
+        border-radius: 5px;
+        z-index: 999;
+    }
+
+    .navbar-container .container .navbar-item ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
